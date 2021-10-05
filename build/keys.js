@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     database: {
-        host: 'bptk5dd1btqmid1a9ave-mysql.services.clever-cloud.com',
-        user: 'uvi2mlmvl36awp2j',
-        password: 'qEDOnHAdnM0eSBU0InL4',
-        database: 'bptk5dd1btqmid1a9ave'
+        host: 'b2hvyw85yj6awdgxouez-mysql.services.clever-cloud.com',
+        user: 'u2dayntlirjplvhq',
+        password: 'ASy655HEiD1Ap4NQTitC',
+        database: 'b2hvyw85yj6awdgxouez'
     }
 };

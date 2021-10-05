@@ -11,5 +11,5 @@ pool.getConnection()
     pool.releaseConnection(connection);
     console.log('DB is connected');
 });
-setInterval(function () { pool.query('SELECT 1'); }, process.env.PORT || 3000); 
+
 exports.default = pool;
