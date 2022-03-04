@@ -16,14 +16,14 @@ const database_1 = __importDefault(require("../database"));
 class MoviesController {
     list(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const movies = yield database_1.default.query('SELECT * FROM movie');
+            const movies = yield database_1.default.query('SELECT * FROM data');
             res.json(movies);
         });
     }
     getOne(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            const movies = yield database_1.default.query('SELECT * FROM movie WHERE mov_id = ?', [id]);
+            const movies = yield database_1.default.query('SELECT * FROM data WHERE mov_id = ?', [id]);
             if (movies.length > 0) {
                 return res.json(movies[0]);
             }
@@ -32,21 +32,21 @@ class MoviesController {
     }
     create(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield database_1.default.query('INSERT INTO movie set ?', [req.body]);
+            yield database_1.default.query('INSERT INTO data set ?', [req.body]);
             res.json({ message: 'Game saved' });
         });
     }
     update(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            yield database_1.default.query('UPDATE movie set ? WHERE mov_id = ?', [req.body, id]);
+            yield database_1.default.query('UPDATE data set ? WHERE mov_id = ?', [req.body, id]);
             res.json({ message: 'The was update' });
         });
     }
     delete(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            yield database_1.default.query('DELETE FROM movie WHERE mov_id = ?', [id]);
+            yield database_1.default.query('DELETE FROM data WHERE mov_id = ?', [id]);
             res.json({ message: 'The movie was deleted' });
         });
     }

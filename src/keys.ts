@@ -1,10 +1,10 @@
 export default {
 
   database: {
-    host: 'b2hvyw85yj6awdgxouez-mysql.services.clever-cloud.com',
-    user: 'u2dayntlirjplvhq',
-    password: 'ASy655HEiD1Ap4NQTitC',
-    database:  'b2hvyw85yj6awdgxouez'
+    host: 'btwo3pzh8lpocd2a7jmo-mysql.services.clever-cloud.com',
+    user: 'ulad25lfealim1p2',
+    password: 'UHtcaNyuBY9Xqy3SUOg2',
+    database:  'btwo3pzh8lpocd2a7jmo'
   }
 
 }
